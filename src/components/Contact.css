@@ -1,0 +1,95 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.contact-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-link-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-link-bar:hover {
+  border-color: var(--accent-gold);
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.contact-link-bar:hover .link-action {
+  color: var(--accent-gold);
+}
+
+.link-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.link-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+}
+
+.link-info p {
+  margin: 0;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.link-action {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.cta-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 3rem;
+  background: linear-gradient(135deg, rgba(20, 26, 43, 0.8) 0%, rgba(10, 15, 30, 0.9) 100%);
+  border-top: 2px solid var(--accent-gold);
+}
+
+.cta-icon {
+  color: var(--accent-gold);
+  margin-bottom: 1.5rem;
+}
+
+.cta-card h3 {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-card p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  padding: 1rem 2rem;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

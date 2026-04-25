@@ -1,0 +1,135 @@
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.col-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.col-icon {
+  color: var(--accent-gold);
+}
+
+.col-header h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.timeline-card {
+  padding: 3rem 2.5rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+  padding-bottom: 2.5rem;
+  border-left: 1px dashed var(--border-color);
+}
+
+.timeline-item.last {
+  border-left: none;
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.timeline-item.last .timeline-dot {
+  left: -5.5px;
+}
+
+.timeline-date {
+  color: var(--accent-gold);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-meta {
+  font-family: monospace;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.05);
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cert-card {
+  padding: 2rem;
+}
+
+.cert-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.4rem;
+}
+
+.cert-top h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.cert-date {
+  color: var(--accent-gold);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cert-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.cert-bullets {
+  padding-left: 1.2rem;
+  list-style-type: square;
+}
+
+.cert-bullets li {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.cert-bullets li::marker {
+  color: var(--accent-gold);
+}
+
+@media (max-width: 992px) {
+  .edu-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
